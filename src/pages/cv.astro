@@ -47,17 +47,6 @@ if (publications.length > 0) {
 
 <Layout>
 	{
-		orderdEducations.length > 0 && (
-			<section class='mb-12'>
-				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
-					Education
-				</h2>
-				<CvTimeline elements={orderdEducations} colored={true} />
-			</section>
-		)
-	}
-
-	{
 		orderdExperiences.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
@@ -72,9 +61,9 @@ if (publications.length > 0) {
 		orderdEducations.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
-					Last publications
+					Education
 				</h2>
-				<PublicationsList elements={orderedPublications}/>
+				<CvTimeline elements={orderdEducations} colored={true} />
 			</section>
 		)
 	}
@@ -83,6 +72,17 @@ if (publications.length > 0) {
 		skills.length > 0 && (
 			<section class='mb-12'>
 				<List listTitle='Skills' listItems={skills}/>
+			</section>
+		)
+	}
+
+	{
+		orderedPublications.length > 0 && (
+			<section class='mb-12'>
+				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
+					Last publications
+				</h2>
+				<PublicationsList elements={orderedPublications}/>
 			</section>
 		)
 	}

@@ -27,7 +27,7 @@ export const template = {
 	website_url: 'https://anthogr.github.io', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
 	menu_left: false,
 	transitions: true,
-	lightTheme: 'emerald', // Select one of the Daisy UI Themes or create your own
+	lightTheme: 'fantasy', // Select one of the Daisy UI Themes or create your own
 	darkTheme: 'sunset', // Default themes are located here: https://daisyui.com/docs/themes/
 	excerptLength: 200,
 	postPerPage: 5,
